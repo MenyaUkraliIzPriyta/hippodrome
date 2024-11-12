@@ -55,21 +55,21 @@ class HorseTest {
     }
 
     @Test
-    void getName() {
+    void getNameTest() {
         String expected = "Fox";
         String actual = horse.getName();
         assertEquals(actual, expected);
     }
 
     @Test
-    void getSpeed() {
+    void getSpeedTest() {
         double expected = 62.34;
         double actual = horse.getSpeed();
         assertEquals(actual, expected);
     }
 
     @Test
-    void getDistance() {
+    void getDistanceTest() {
         Horse horseNullDistance = new Horse("Fury", 137.23);
         double expected1 = 1000;
         double actual1 = horse.getDistance();
@@ -80,7 +80,7 @@ class HorseTest {
     }
 
     @Test
-    void move() {
+    void moveTest() {
         try (MockedStatic<Horse> mockedStatic = mockStatic(Horse.class)) {
             horse.move();
             mockedStatic.verify(() -> Horse.getRandomDouble(0.2, 0.9));
