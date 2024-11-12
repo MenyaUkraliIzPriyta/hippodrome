@@ -1,1 +1,1 @@
-In this project it was necessary to create Junit5 tests, as well as perform class logging. Logs are saved in the hippodrome.log file, which is renamed every day according to the template to hippodrome.yyy-MM-dd.log. At the same time, files older than 7 days are deleted
+In this project it was necessary to create Junit5 tests, as well as perform class logging. Logs are saved in the hippodrome.log file, which is renamed every day according to the template to hippodrome.yyy-MM-dd.log. At the same time, files older than 7 days are deleted.
